@@ -1,0 +1,11 @@
+body {
+	background-color: #eee;
+	font-size: 14px;
+	color: #222;
+	margin: 0 80px;
+}
+
+.title {
+	font-family: 'Pacifico', cursive;
+	font-size: 60px;
+}
