@@ -1,5 +1,6 @@
 body {
 	font-size: 14px;
+	color: #222;
 }
 
 /* Utilities
@@ -104,6 +105,19 @@ hr {
 	text-shadow: 0 -1px 0 #780f01;
 }
 
+.button-black {
+	background-color: #222;
+	background: -webkit-linear-gradient(to bottom, #555, #222);
+	background: -moz-linear-gradient(to bottom, #555, #222);
+	background: -o-linear-gradient(to bottom, #555, #222);
+	background: -ms-linear-gradient(to bottom, #555, #222);
+	background: linear-gradient(to bottom, #555, #222);
+	border-color: #222;
+	-webkit-box-shadow: 0 1px 0 0 #888 inset;
+	box-shadow: 0 1px 0 0 #888 inset;
+	text-shadow: 0 -1px 0 #000;
+}
+
 .button-small {
 	font-size: 10px;
 	padding: 5px 10px;
@@ -129,5 +143,48 @@ h1, h2, h3, h4, h5 {
 	font-weight: bold;
 }
 
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
 /* Form
 -------------------------------------------------- */
+input,textarea {
+	display: block;
+	width: 200px;
+	border: 1px solid #ddd;
+	padding: 7px;
+	font-size: 14px;
+	color: #444;
+	border-radius: 4px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 5px #e3e3e3;
+	box-shadow: 0 1px 5px #e3e3e3;
+	background: -webkit-linear-gradient(top, #FFFFFF, #f1f1f1 1px, #FFFFFF 25px);
+	background: -moz-linear-gradient(top, #FFFFFF, #f1f1f1 1px, #FFFFFF 25px);
+	background: -o-linear-gradient(top, #FFFFFF, #f1f1f1 1px, #FFFFFF 25px);
+	background: -ms-linear-gradient(top, #FFFFFF, #f1f1f1 1px, #FFFFFF 25px);
+	background: linear-gradient(top, #FFFFFF, #f1f1f1 1px, #FFFFFF 25px);
+}
+
+
+input:hover,input:focus,textarea:hover,textarea:focus {
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+	display: block;
+	padding: 5px 0px;
+	margin: 9px 0 0 0;
+}
