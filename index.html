@@ -12,17 +12,37 @@
 	<div class="container">
 		<h1 class="title text-center">ilove.css</h1>
 		<div class="box">
-			<h2>Buttons</h2>
+			<h2 id="menu">Menu</h2>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li class="divider"></li>
+					<li>
+						<a href="#buttons" class="dropdown">Buttons</a>
+						<ul>
+							<li><a href="#buttons-big">Big buttons</a></li>
+							<li><a href="#buttons">Normal buttons</a></li>
+							<li><a href="#buttons-small">Small buttons</a></li>
+						</ul>
+					</li>
+					<li class="divider"></li>
+					<li><a href="#forms">Forms</a></li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<h2 id="buttons">Buttons</h2>
 			<a href="#" class="button">Press me</a>
 			<a href="#" class="button button-green">Press me</a>
 			<a href="#" class="button button-red">Press me</a>
 			<a href="#" class="button button-black">Press me</a>
-			<h4>Big</h4>
+			<h4 id="buttons-big">Big</h4>
 			<a href="#" class="button button-big ">Press me</a>
 			<a href="#" class="button button-green button-big">Press me</a>
 			<a href="#" class="button button-red button-big">Press me</a>
 			<a href="#" class="button button-black button-big">Press me</a>
-			<h4>Small</h4>
+			<h4 id="buttons-small">Small</h4>
 			<a href="#" class="button button-small">Press me</a>
 			<a href="#" class="button button-green button-small">Press me</a>
 			<a href="#" class="button button-red button-small">Press me</a>
@@ -30,7 +50,7 @@
 			
 			<hr>
 
-			<h2>Forms</h2>
+			<h2 id="forms">Forms</h2>
 			<form action="">
 				<label for="name">Name</label>
 				<input type="text" name="name">
