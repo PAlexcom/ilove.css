@@ -1,3 +1,4 @@
+// Colors params
 @white: #fff;
 @blue: #0088CC;
 @blue-dark: #0044CC;
@@ -7,8 +8,15 @@
 @red-dark: #891100;
 @black: #555;
 @black-dark: #222;
+
+// Typography params
 @defaultFontSize: 12px;
 @defaultLineHeightRatio: 1.2;
+
+// Grid params
+@rowWidth: 960px;
+@boxPadding: 10px;
+@boxPaddingInPercentage: (100*(@boxPadding*2))/@rowWidth;
 
 // Functions
 .border-radius (@radius: 4px) {
@@ -445,6 +453,7 @@ table {
 ilove.css
 ========================================================================== */
 body {
+	margin: 0 auto;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	font-style: normal;
 	font-weight: normal;
@@ -457,8 +466,8 @@ body {
 
 /* Typography
 -------------------------------------------------- */
-h1, h2, h3, h4, h5 {
-	margin: 10px 0px;
+h1, h2, h3, h4, h5, h6 {
+	margin: 5px 0px;
 	font-weight: bold;
 	display: block;
 }
@@ -471,6 +480,11 @@ h1 {
 h2 {
 	font-size: @defaultFontSize * 2.4;
 	line-height: @defaultFontSize * 2.4 * @defaultLineHeightRatio;
+
+	&.big {
+		font-size: @defaultFontSize * 2.4 * 1.5;
+		line-height: @defaultFontSize * 2.4 * 1.5 * @defaultLineHeightRatio;
+	}
 }
 
 h3 {
@@ -486,6 +500,32 @@ h4 {
 h5 {
 	font-size: @defaultFontSize * 1.4;
 	line-height: @defaultFontSize * 1.4 * @defaultLineHeightRatio;
+}
+
+h6 {
+	font-size: @defaultFontSize * 1;
+	line-height: @defaultFontSize * 1 * @defaultLineHeightRatio;
+}
+
+a {
+	color: @blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
 }
 
 .bold {
@@ -507,10 +547,84 @@ h5 {
 /* Grid
 -------------------------------------------------- */
 .box {
-	background-color: #f1f1f1;
-	border: 1px solid #e1e1e1;
-	padding: 20px;
-	box-shadow: 0 1px 5px #e3e3e3;
+	padding: @boxPadding;
+
+	&.gray{
+		background-color: #f1f1f1;
+		border: 1px solid #e1e1e1;
+		padding: @boxPadding - 1;
+		box-shadow: 0 1px 5px #e3e3e3;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	width: @rowWidth;
+}
+
+.row {
+	width: @rowWidth;
+}
+
+/* clearfix trick */
+.row:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6 {
+	float: left;
+}  
+
+.column1 {
+	width: (100%/6);
+
+	&.box {
+		width: (100%/6)-(@boxPaddingInPercentage);
+	}
+}
+
+.column2 {
+	width: (100%/3);
+
+	&.box {
+		width: (100%/3)-(@boxPaddingInPercentage);
+	}
+}
+
+.column3 {
+	width: (100%/2);
+
+	&.box {
+		width: (100%/2)-(@boxPaddingInPercentage);
+	}
+}
+
+.column4 {
+	width: ((200%)/3);
+
+	&.box {
+		width: ((200%)/3)-(@boxPaddingInPercentage);
+	}
+}
+
+.column5 {
+	width: ((500%)/6);
+
+	&.box {
+		width: ((500%)/6)-(@boxPaddingInPercentage);
+	}
+}
+
+.column6 {
+	width: 100%;
+
+	&.box {
+		width: 100%-@boxPaddingInPercentage;
+	}
 }
 
 /* Utilities
@@ -584,6 +698,7 @@ hr {
 	}
 
 	&:hover {
+		text-decoration: none;
 		.background-gradient-to-top(@blue);
 	}
 
