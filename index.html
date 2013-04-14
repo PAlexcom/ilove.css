@@ -25,16 +25,29 @@
 						<li><a href="#buttons-small">Small buttons</a></li>
 					</ul>
 				</li>
-				<li class="divider"></li>
-				<li><a href="#forms">Forms</a></li>
 			</ul>
 		</div>
 	</header>
 	
 	<div class="container">
 		<div class="row">
+			<div class="column1 box light">column1</div>
+			<div class="column1 box light">column1</div>
+			<div class="column1 box light">column1</div>
+			<div class="column1 box light">column1</div>
+			<div class="column1 box light">column1</div>
+			<div class="column1 box light">column1</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
 			<div class="column6 box">
 				<h2 id="grid" class="big">Grid</h2>
+				<p>
+					Grid divided in 6 columns, default width size is 960px, default column size is 960px/6
+				</p>
 			</div>
 		</div>
 
@@ -68,11 +81,29 @@
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="column6">
+<pre class="code box light">
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"row"</span><span class="tag">&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"column5"</span>&gt;
+      ...
+   <span class="tag">&lt;/div&gt;</span>
+   <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"column1"</span>&gt;
+      ...
+   <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</pre>
+			</div>
+		</div>
+
 		<hr>
 
 		<div class="row">
 			<div class="column6 box">
 				<h2 id="typography" class="big">Typography</h2>
+				<p>
+					Default font family is Helvetica Neue, Helvetica, Arial, the font-size is 12px, the line-height is 12px*1.3
+				</p>
 			</div>
 		</div>
 		<div class="row">
@@ -97,6 +128,45 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, mollit anim id est laborum, mollit anim id est laborum, mollit anim id est laborum, mollit anim id est laborum.
 				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column1">
+<pre class="code box light">
+<span class="tag">&lt;h1&gt;</span>...<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>...<span class="tag">&lt;/h2&gt;</span>
+   ...
+<span class="tag">&lt;h5&gt;</span>...<span class="tag">&lt;/h5&gt;</span>
+<span class="tag">&lt;h6&gt;</span>...<span class="tag">&lt;/h6&gt;</span>
+</pre>
+			</div>
+			<div class="column2">
+<pre class="code box light">
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"column3 box"</span><span class="tag">&gt;
+   &lt;h3&gt;</span>...<span class="tag">&lt;/h3&gt;
+   &lt;p&gt;
+      &lt;em&gt;</span>by<span class="tag">&lt;/em&gt;
+      &lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span><span class="tag">&gt;</span>P.Alex<span class="tag">&lt;/a&gt;
+   &lt;/p&gt;
+   &lt;p&gt;</span>
+      Lorem ipsum ...
+   <span class="tag">&lt;/p&gt;
+&lt;/div&gt;</span>
+</pre>
+			</div>
+			<div class="column3">
+<pre class="code box light">
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"column3 box gray"</span><span class="tag">&gt;
+   &lt;h3&gt;</span>...<span class="tag">&lt;/h3&gt;
+   &lt;p&gt;
+      &lt;em&gt;</span>by<span class="tag">&lt;/em&gt;
+      &lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span><span class="tag">&gt;</span>P.Alex<span class="tag">&lt;/a&gt;
+   &lt;/p&gt;
+   &lt;p&gt;</span>
+      Lorem ipsum ...
+   <span class="tag">&lt;/p&gt;
+&lt;/div&gt;</span>
+</pre>
 			</div>
 		</div>
 
@@ -124,6 +194,24 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="column3">
+<pre class="code box light">
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button green"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button red"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button black"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+</pre>
+			</div>
+			<div class="column3">
+<pre class="code box light">
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button small"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button green small"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button red small"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button black small"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+</pre>
+			</div>
+		</div>
+		<div class="row">
 			<div class="column3 box">
 				<h4>3D</h4>
 				<a href="#" class="button d3">Press me</a>
@@ -140,7 +228,25 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="column4 box">
+			<div class="column3">
+<pre class="code box light">
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button d3"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button green d3"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button red d3"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button black d3"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+</pre>
+			</div>
+			<div class="column3">
+<pre class="code box light">
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button round"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button green round"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button red round"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button black round"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+</pre>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column6 box">
 				<h4>Big</h4>
 				<a href="#" class="button big ">Press me</a>
 				<a href="#" class="button green big">Press me</a>
@@ -148,24 +254,14 @@
 				<a href="#" class="button black big">Press me</a>
 			</div>
 		</div>
-
-		<hr>
-
 		<div class="row">
-			<div class="column6 box">
-				<h2 id="forms" class="big">Forms</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column6 box">
-				<form action="">
-					<label for="name">Name</label>
-					<input type="text" name="name">
-					<label for="email">Email</label>
-					<input type="text" name="email">
-					<label for="message">Message</label>
-					<textarea name="message" cols="30" rows="10"></textarea>
-				</form>
+			<div class="column4">
+<pre class="code box light">
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button big"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button green big"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button red big"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"button black big"</span>&gt;Press me<span class="tag">&lt;/a&gt;</span>
+</pre>
 			</div>
 		</div>
 	</div>

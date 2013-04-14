@@ -3,6 +3,7 @@ html {
 }
 
 .title {
+	padding-top: 30px;
 	font-family: 'Pacifico', cursive;
 	font-size: 80px;
 	line-height: 100px;
