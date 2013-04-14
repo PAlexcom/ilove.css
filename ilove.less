@@ -17,7 +17,7 @@
 @rowWidth: 960px;
 @boxPadding: 10px;
 @boxPaddingInPercentage: (100*(@boxPadding*2))/@rowWidth;
-@boxMarginLeft: 5px;
+@boxMarginLeft: 10px;
 @boxMarginLeftInPercentage: (100*(@boxMarginLeft))/@rowWidth;
 
 // Functions
@@ -524,6 +524,7 @@ p {
 
 pre.code {
 	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+	margin: 0px;
 
 	& .tag {
 		color: #1E347B;
@@ -566,7 +567,6 @@ strong {
 -------------------------------------------------- */
 .box {
 	padding: @boxPadding;
-	margin: 5px 0px;
 
 	&.gray{
 		background-color: #f1f1f1;
@@ -609,7 +609,7 @@ strong {
 	width: (100%/6);
 
 	&.box {
-		margin-left: @boxMarginLeft;
+		margin: @boxMarginLeft 0px 0px @boxMarginLeft;
 		width: ((100% + @boxMarginLeftInPercentage)/6)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage);
 	}
 }
@@ -618,9 +618,8 @@ strong {
 	width: (100%/3);
 
 	&.box {
-		margin-left: @boxMarginLeft;
-		//width: (100%/3)-(@boxPaddingInPercentage);
-		width: ((100% + @boxMarginLeftInPercentage)/3)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage*2);
+		margin: @boxMarginLeft 0px 0px @boxMarginLeft;
+		width: ((100% + @boxMarginLeftInPercentage)/3)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage);
 	}
 }
 
@@ -628,9 +627,8 @@ strong {
 	width: (100%/2);
 
 	&.box {
-		margin-left: @boxMarginLeft;
-		//width: (100%/2)-(@boxPaddingInPercentage);
-		width: ((100% + @boxMarginLeftInPercentage)/2)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage*3);
+		margin: @boxMarginLeft 0px 0px @boxMarginLeft;
+		width: ((100% + @boxMarginLeftInPercentage)/2)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage);
 	}
 }
 
@@ -638,9 +636,8 @@ strong {
 	width: ((200%)/3);
 
 	&.box {
-		margin-left: @boxMarginLeft;
-		//width: ((200%)/3)-(@boxPaddingInPercentage);
-		width: ((200% + @boxMarginLeftInPercentage)/3)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage*4);
+		margin: @boxMarginLeft 0px 0px @boxMarginLeft;
+		width: (((100% + @boxMarginLeftInPercentage)/6)*4)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage);
 	}
 }
 
@@ -648,9 +645,8 @@ strong {
 	width: ((500%)/6);
 
 	&.box {
-		margin-left: @boxMarginLeft;
-		//width: ((500%)/6)-(@boxPaddingInPercentage);
-		width: ((500% + @boxMarginLeftInPercentage)/6)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage*5);
+		margin: @boxMarginLeft 0px 0px @boxMarginLeft;
+		width: (((100% + @boxMarginLeftInPercentage)/6)*5)-(@boxPaddingInPercentage)-(@boxMarginLeftInPercentage);
 	}
 }
 
@@ -658,7 +654,7 @@ strong {
 	width: 100%;
 
 	&.box {
-		margin-left: @boxMarginLeft;
+		margin: @boxMarginLeft 0px 0px @boxMarginLeft;
 		width: 100%-@boxPaddingInPercentage;
 	}
 }
