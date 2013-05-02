@@ -460,7 +460,7 @@ body {
 	font-style: normal;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
-	// word-spacing: 0.25em;
+	word-spacing: 0.25em;
 	color: #333;
 	line-height: @defaultFontSize * @defaultLineHeightRatio;
 	font-size: @defaultFontSize;
@@ -468,6 +468,43 @@ body {
 
 /* Typography
 -------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato|Pacifico|Open+Sans|Lobster|EB+Garamond|Goudy+Bookletter+1911);
+
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+
+.garamond {
+	font-family: 'EB Garamond', serif;
+}
+
+.lobster {
+	font-family: 'Lobster', cursive;
+}
+
+.pacifico {
+	font-family: 'Pacifico', cursive;
+}
+
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ampersand {
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.initialism {
+	font-size: 0.9em;
+	text-transform:uppercase;
+	letter-spacing: 0.1 em;
+}
+
+.small-caps {
+	font-variant: small-caps;
+	text-transform:lowercase;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 5px 0px;
 	font-weight: bold;
@@ -581,6 +618,10 @@ strong {
 		padding: @boxPadding - 1;
 		box-shadow: 0 1px 5px #f3f3f3;
 	}
+}
+
+.box-perfect-readability {
+	width: 33em;
 }
 
 .container {
